@@ -1,0 +1,101 @@
+/** 
+  * Author: Rashmi Raj,
+  * Date: 03-03-2022
+*/
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+  
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Manrope', sans-serif;
+	background-color: hsl(218, 23%, 16%);
+}
+
+#wrap {
+	position: relative;
+    margin: 25vh auto 0;
+    max-width: 540px;
+    background-color: hsl(217, 19%, 24%);
+    min-height: 200px;
+    border-radius: 15px;
+    padding: 50px;
+    padding-bottom: 80px;
+}
+
+.title {
+	color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.25em;
+    font-weight: 800;
+}
+
+.quote {
+	margin-top: 40px;
+    color: hsl(193, 38%, 86%);
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.divider {
+	margin: 50px auto 0;
+    width: 445px;
+    display: block;
+}
+
+.dice {
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	transform: translateX(-50%) translateY(50%);
+	width: 65px;
+	height: 65px;
+	border-radius: 100%;
+	background-color: hsl(150, 100%, 66%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.dice:active {
+	box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+}
+
+.dice img {
+	width: 24px;
+	height: 24px;
+}
+
+@media(max-width: 376px) {
+	.wrap {
+		position: relative;
+		margin: 15vh auto 0;
+		max-width: 100%;
+		min-height: 200px;
+		padding: 30px;
+		padding-bottom: 70px;
+	}
+
+	.title {
+		font-size: 12px;
+	}
+
+	.quote {
+		margin-top: 40px;
+		font-size: 28px;
+	}
+
+	.divider {
+		margin: 40px auto 0;
+		width: 285px;
+	}
+}
