@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const getResource = async () => {
-        let res=await fetch('https://api.adviceslip.com/advice');
+        let res=await fetch('https://api.adviceslip.com/advice', {cache: "no-cache"});
         if(!res.ok) throw new Error (`Could not fetch ${url}, status ${res.status}`);
         return await res.json();
     }
